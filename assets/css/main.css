@@ -317,4 +317,7 @@ ul.icon {
         margin: 0;
         float: none;
     }
+    .spotlight {
+        border: 0;
+    }
 }
