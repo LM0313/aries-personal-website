@@ -279,6 +279,50 @@ ul.icon {
     border-bottom: none !important;
 }
 
+#block {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    padding: 1em;
+}
+
+#block .level {
+    display: block;
+    width: 4.5em;
+    height: 4.5em;
+    border: .5em;
+    border-radius: 4.5em;
+    margin: auto;
+    border-style: solid;
+    border-color: #777;
+    transform: rotate(45deg);
+    padding: 1em;
+}
+
+#block h3 {
+    font-size: 1em;
+}
+
+#block .level.level-1 {
+    border-top-color: #a70000;
+}
+
+#block .level.level-2 {
+    border-top-color: #ffcb55;
+    border-right-color: #ffcb55;
+}
+
+#block .level.level-3 {
+    border-top-color: #0089ff;
+    border-right-color: #0089ff;
+    border-bottom-color: #0089ff;
+}
+
+#block .level.level-4 {
+    border-color: #97ff68;
+}
+
 
 /* RWD */
 
@@ -314,13 +358,18 @@ ul.icon {
     .spotlight,
     .title {
         width: 100%;
-        margin: 0;
         float: none;
+        margin: 0.25em 0;
+        border-left: 0;
     }
-    .title {
-        border: 0;
+    #block {
+        width: 33%;
     }
-    .spotlight {
-        border: 0;
+    #block .level {
+        width: 1.2em;
+        height: 1.2em;
+    }
+    #block h3 {
+        font-size: .65em;
     }
 }
