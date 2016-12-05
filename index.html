@@ -10,8 +10,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aries Cs - About Me</title>
 </head>
+<script>
+  function reslove() {
+    var width = document.body.clientWidth;
+    console.log(width);
+    if (width <= 1080) {
+      document.getElementById("canvas").setAttribute("id", "null");
+    }
+  }
+</script>
 
-<body>
+<body onload="reslove()">
   <section class="canvas-wrap">
     <div id="canvas" class="gradient"></div>
   </section>
@@ -27,16 +36,7 @@
     window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')
   </script>
   <script src="js/color.js"></script>
-  <script src="js/loading.js"></script>
   <script src="js/type.js"></script>
-  <script>
-    $(document).ready(function () {
-      width = $(window).width();
-      if(width<=1080){
-        document.getElementById("canvas").setAttribute("id", "");
-      }
-    });
-  </script>
   <script>
     function changediv() {
       document.getElementById("hidden").setAttribute("id", "show");
