@@ -15,14 +15,14 @@
     var width = document.body.clientWidth;
     console.log(width);
     if (width <= 1080) {
+      document.getElementById("canvas").removeEventListener('touchmove', onDocumentTouchMove, false);
       $("#canvas").remove();
       $("#sketch").remove();
-      debugger;
     }
   }
 </script>
 
-<body>
+<body onload="reslove();">
   <section class="canvas-wrap" id="sketch">
     <div id="canvas" class="gradient"></div>
   </section>

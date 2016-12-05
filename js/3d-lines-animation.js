@@ -4,8 +4,6 @@ function ShowTime(d,n){
 　setTimeout('ShowTime()',1000);
   return n;
 }
-
-console.log(ShowTime());
 var mouseX = 0
   , mouseY = 0
   , windowHalfX = window.innerWidth / 2
@@ -71,8 +69,8 @@ function init() {
   }));
   scene.add(line);
   document.addEventListener('mousemove', onDocumentMouseMove, true);
-  document.addEventListener('touchstart', onDocumentTouchStart, true);
-  document.addEventListener('touchmove', onDocumentTouchMove, true);
+//  document.addEventListener('touchstart', onDocumentTouchStart, true);
+//  document.addEventListener('touchmove', onDocumentTouchMove, false);
   //
   window.addEventListener('resize', onWindowResize, false);
 }
