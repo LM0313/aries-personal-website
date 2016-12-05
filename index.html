@@ -31,12 +31,8 @@
   <script src="js/type.js"></script>
   <script>
     function changediv() {
-      if (document.getElementById("hidden")) {
-        document.getElementById("hidden").setAttribute("id", "show");
-      }
-      else {
-        document.getElementById("show").setAttribute("id", "hidden");
-      }
+      document.getElementById("hidden").setAttribute("id", "show");
+      document.getElementById("show").setAttribute("id", "hidden");
     }
   </script>
   <div class="first" id="show">
@@ -91,7 +87,7 @@
       <div class="container">
         <h1>Introduction</h1> </div>
     </div>
-    <div class="spotlight" id="hidden">
+    <div class="spotlight">
       <div class="container">
         <h1>能力指標</h1>
         <hr>
