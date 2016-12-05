@@ -1,4 +1,4 @@
-# aries-personal-website v1.0
+# aries-personal-website v2.0
 
 Inspried by @Aries0d0f
 
