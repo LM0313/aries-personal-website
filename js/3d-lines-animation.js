@@ -71,7 +71,7 @@ function init() {
   scene.add(line);
   document.addEventListener('mousemove', onDocumentMouseMove, true);
   document.addEventListener('touchstart', onDocumentTouchStart, true);
-  document.addEventListener('touchmove', onDocumentTouchMove, true);
+  document.addEventListener('touchmove', onDocumentTouchMove, false);
   //
   window.addEventListener('resize', onWindowResize, false);
 }
