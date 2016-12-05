@@ -22,4 +22,4 @@ CC-BY 4.0
   - [ ] Introduction contents rewrite.
   - [ ] Add introduction's English translated version.
   - [ ] Fix some grammar error.
-  - [-] 學測快爆惹
+  - [x] 學測快爆惹
