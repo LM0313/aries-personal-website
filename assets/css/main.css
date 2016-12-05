@@ -323,11 +323,12 @@ ul.icon {
 /* Pad */
 
 @media screen and (max-width: 1080px) {
-  
   #canvas {
     display: none;
+    z-index: -1;
+    height: 0;
+    width: 0;
   }
-  
   body {
     background-image: url(image/bg.jpg);
     background-attachment: fixed;
@@ -335,7 +336,6 @@ ul.icon {
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
   h1 {
     font-size: 1.5em;
   }
