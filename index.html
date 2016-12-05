@@ -30,6 +30,14 @@
   <script src="js/loading.js"></script>
   <script src="js/type.js"></script>
   <script>
+    $(document).ready(function () {
+      width = $(window).width();
+      if(width<=1080){
+        document.getElementById("canvas").setAttribute("id", "hidden");
+      }
+    });
+  </script>
+  <script>
     function changediv() {
       document.getElementById("hidden").setAttribute("id", "show");
       document.getElementById("show").setAttribute("id", "hidden");
