@@ -25,11 +25,11 @@
 .first .content {
   color: #fff;
   display: inline-block;
-  padding: 2em 1em;
+  padding: 1em;
   margin: 0 1em;
   float: left;
   border-left: 1px solid #fff;
-  height: 6em;
+  height: 8em;
 }
 
 .first img {
