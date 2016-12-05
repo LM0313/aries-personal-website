@@ -61,13 +61,14 @@
   }
 }
 
+
 @media screen and (max-width: 1366px) {
   .first .content {
     width: 20em;
   }
 }
 
-@media screen and (max-width: 11560px) {
+@media screen and (max-width: 1156px) {
   .first header {
     width: 75%;
   }
