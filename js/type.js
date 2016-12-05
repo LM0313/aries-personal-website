@@ -105,7 +105,7 @@
         startDelay: 0,
         backSpeed: 0,
         shuffle: !1,
-        backDelay: 500,
+        backDelay: 300,
         loop: !1,
         loopCount: !1,
         showCursor: !0,
