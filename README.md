@@ -23,3 +23,4 @@ CC-BY 4.0
   - [ ] Add introduction's English translated version.
   - [ ] Fix some grammar error.
   - [x] 學測快爆惹
+  - [x] Fix text-typing speed on welcome screen.
