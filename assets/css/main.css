@@ -323,16 +323,7 @@ ul.icon {
 /* Pad */
 
 @media screen and (max-width: 1080px) {
-  section {
-    display: none;
-  }
-  
-  #canvas {
-    display: none;
-    z-index: -1;
-    height: 0;
-    width: 0;
-  }
+/*
   body {
     background-image: url(image/bg.jpg);
     background-attachment: fixed;
@@ -340,6 +331,7 @@ ul.icon {
     background-repeat: no-repeat;
     background-size: cover;
   }
+*/
   h1 {
     font-size: 1.5em;
   }
@@ -351,7 +343,7 @@ ul.icon {
   }
   .intro {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
     background-color: #000;
   }
