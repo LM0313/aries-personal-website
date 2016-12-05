@@ -15,13 +15,13 @@
     var width = document.body.clientWidth;
     console.log(width);
     if (width <= 1080) {
-      document.getElementById("canvas").setAttribute("id", "null");
+      $("#canvas").remove();
     }
   }
 </script>
 
-<body onload="reslove()">
-  <section class="canvas-wrap">
+<body>
+  <section class="canvas-wrap" id="sketch">
     <div id="canvas" class="gradient"></div>
   </section>
   <!-- Main library -->
@@ -49,7 +49,7 @@
         <h1>Aries Cs</h1>
         <p id="typing"></p>
       </div>
-      <div class="button" onclick="changediv()">Show More ></div>
+      <div class="button" onclick="changediv();reslove();">Show More ></div>
     </header>
   </div>
   <div id="hidden">
