@@ -2,6 +2,10 @@
   display: none !important;
 }
 
+#show {
+  z-index: 1000;
+}
+
 .first {
   position: relative;
   display: block;
