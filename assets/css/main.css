@@ -323,6 +323,7 @@ ul.icon {
 /* Pad */
 
 @media screen and (max-width: 1080px) {
+  
   #canvas {
     display: none;
   }

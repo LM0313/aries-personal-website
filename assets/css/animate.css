@@ -80,6 +80,7 @@
     position: relative;
     padding: 3em 0;
     top: 0;
+    background-color: rgba(0, 0, 0, 0.35);
   }
   .button {
     position: static;
