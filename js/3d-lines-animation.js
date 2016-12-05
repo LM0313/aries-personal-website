@@ -69,7 +69,7 @@ function init() {
     , opacity: 0.2
   }));
   scene.add(line);
-  document.addEventListener('mousemove', onDocumentMouseMove, false);
+  document.addEventListener('mousemove', onDocumentMouseMove, true);
   document.addEventListener('touchstart', onDocumentTouchStart, true);
   document.addEventListener('touchmove', onDocumentTouchMove, true);
   //
