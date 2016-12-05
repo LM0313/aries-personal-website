@@ -2,161 +2,200 @@
 <html prefix='og: http://ogp.me/ns#'>
 
 <head>
-    <meta charset="UTF-8">
-    <meta property="og:title" content="Aries Cs"></meta>
-    <meta property="og:type" content="Personal Website"></meta>
-    <meta property="og:url" content="https://aries0d0f.tk"></meta>
-    <meta property="og:image" content="https://aries0d0f.tk/assets/css/image/person.jpg"></meta>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aries Cs - About Me</title>
+  <meta charset="UTF-8">
+  <meta property="og:title" content="Aries Cs"></meta>
+  <meta property="og:type" content="Personal Website"></meta>
+  <meta property="og:url" content="https://aries0d0f.tk"></meta>
+  <meta property="og:image" content="https://aries0d0f.tk/assets/css/image/person.jpg"></meta>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aries Cs - About Me</title>
 </head>
 
 <body>
+  <section class="canvas-wrap">
+    <div id="canvas" class="gradient"></div>
+  </section>
+  <!-- Main library -->
+  <script src="js/three.min.js"></script>
+  <!-- Helpers -->
+  <script src="js/projector.js"></script>
+  <script src="js/canvas-renderer.js"></script>
+  <!-- Visualitzation adjustments -->
+  <script src="js/3d-lines-animation.js"></script>
+  <script src="http://libs.useso.com/js/jquery/2.1.1/jquery.min.js" type="text/javascript"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')
+  </script>
+  <script src="js/color.js"></script>
+  <script src="js/loading.js"></script>
+  <script src="js/type.js"></script>
+  <script>
+    function changediv() {
+      if (document.getElementById("hidden")) {
+        document.getElementById("hidden").setAttribute("id", "show");
+      }
+      else {
+        document.getElementById("show").setAttribute("id", "hidden");
+      }
+    }
+  </script>
+  <div class="first" id="show">
+    <header> <img src="./assets/css/image/person.jpg" alt="" class="logo">
+      <div class="content">
+        <h1>Aries Cs</h1>
+        <p id="typing"></p>
+      </div>
+      <div class="button" onclick="changediv()">Show More ></div>
+    </header>
+  </div>
+  <div id="hidden">
     <div class="intro">
-        <div class="container">
-            <header id="header"> <img src="./assets/css/image/person.jpg" alt="" class="logo">
-                <h1>Aries Cs</h1> </header>
-            <div class="content">
-                <h3>About Me</h3>
-                <p>Hi, I'm Aries, believed that creative is superpower. With enrich myself, hope I can make the world a better place to live.</p>
-            </div>
-            <div class="content">
-                <h3>Good At</h3>
-                <ul class="experience">
-                    <li><i class="fa fa-code" aria-hidden="true"></i>
-                        <p>Web Devoloper</p>
-                    </li>
-                    <li><i class="fa fa-sitemap" aria-hidden="true"></i>
-                        <p>Server Management</p>
-                    </li>
-                    <li><i class="fa fa-linux" aria-hidden="true"></i>
-                        <p>Linux Lover</p>
-                    </li>
-                    <li><i class="fa fa-adjust" aria-hidden="true"></i>
-                        <p>UI/ UX Designer</p>
-                    </li>
-                </ul>
-            </div>
-            <footer id="footer">
-                <ul class="icons">
-                    <li><a href="tel:+886966657716" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
-                    <li><a href="https://www.facebook.com/aries0d0f" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li> <a href="mailto:aries0d0f@gmail.com" class="icon alt fa-envelope"><span class=" label ">Email</span></a></li>
-                    <li><a href="https://github.com/aries0d0f" class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>2016 <a href="https://github.com/aries0d0f">@Aries0d0f</a>. All Right Reserved. | <a href="https://github.com/aries0d0f/aries-personal-website">Git Fork</a></li>
-                </ul>
-            </footer>
+      <div class="container">
+        <header id="header"> <img src="./assets/css/image/person.jpg" alt="" class="logo">
+          <div class="content">
+            <h3>About Me</h3>
+            <p>Hi, I'm Aries, believed that creative is superpower. With enrich myself, hope I can make the world a better place to live in</p>
+          </div>
+        </header>
+        <div class="content">
+          <h3>Good At</h3>
+          <ul class="experience">
+            <li><i class="fa fa-code" aria-hidden="true"></i>
+              <p>Web Devoloper</p>
+            </li>
+            <li><i class="fa fa-sitemap" aria-hidden="true"></i>
+              <p>Server Management</p>
+            </li>
+            <li><i class="fa fa-linux" aria-hidden="true"></i>
+              <p>Linux Lover</p>
+            </li>
+            <li><i class="fa fa-adjust" aria-hidden="true"></i>
+              <p>UI/ UX Designer</p>
+            </li>
+          </ul>
         </div>
+        <footer id="footer">
+          <ul class="icons">
+            <li><a href="tel:+886966657716" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
+            <li><a href="https://www.facebook.com/aries0d0f" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+            <li> <a href="mailto:aries0d0f@gmail.com" class="icon alt fa-envelope"><span class=" label ">Email</span></a></li>
+            <li><a href="https://github.com/aries0d0f" class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>2016 <a href="https://github.com/aries0d0f">@Aries0d0f</a>. All Right Reserved. | <a href="https://github.com/aries0d0f/aries-personal-website">Git Fork</a></li>
+          </ul>
+        </footer>
+      </div>
     </div>
     <div class="title">
-        <div class="container">
-            <h1>Introduction</h1> </div>
+      <div class="container">
+        <h1>Introduction</h1> </div>
+    </div>
+    <div class="spotlight" id="hidden">
+      <div class="container">
+        <h1>能力指標</h1>
+        <hr>
+        <div class="skill">
+          <div id="block">
+            <div class="level level-4"> </div>
+            <p>★★★★</p>
+            <h3>HTML5 & CSS3</h3></div>
+          <div id="block">
+            <div class="level level-4"> </div>
+            <p>★★★★</p>
+            <h3>HardWare</h3></div>
+          <div id="block">
+            <div class="level level-3"> </div>
+            <p>★★★☆</p>
+            <h3>Linux</h3></div>
+          <div id="block">
+            <div class="level level-3"> </div>
+            <p>★★★☆</p>
+            <h3>UI/UX Design</h3></div>
+          <div id="block">
+            <div class="level level-2"> </div>
+            <p>★★☆☆</p>
+            <h3>Python</h3></div>
+          <div id="block">
+            <div class="level level-2"> </div>
+            <p>★★☆☆</p>
+            <h3>JavaScript</h3></div>
+          <div id="block">
+            <div class="level level-1"> </div>
+            <p>★☆☆☆</p>
+            <h3>Node.js</h3></div>
+          <div id="block">
+            <div class="level level-1"> </div>
+            <p>★☆☆☆</p>
+            <h3>iOS</h3></div>
+          <div id="block">
+            <div class="level level-1"> </div>
+            <p>★☆☆☆</p>
+            <h3>PHP</h3></div>
+        </div>
+      </div>
     </div>
     <div class="spotlight">
-        <div class="container">
-            <h1>能力指標</h1>
-            <hr>
-            <div class="skill">
-                <div id="block">
-                    <div class="level level-4"> </div>
-                    <p>★★★★</p>
-                    <h3>HTML5 & CSS3</h3></div>
-                <div id="block">
-                    <div class="level level-4"> </div>
-                    <p>★★★★</p>
-                    <h3>HardWare</h3></div>
-                <div id="block">
-                    <div class="level level-3"> </div>
-                    <p>★★★☆</p>
-                    <h3>Linux</h3></div>
-                <div id="block">
-                    <div class="level level-3"> </div>
-                    <p>★★★☆</p>
-                    <h3>UI/UX Design</h3></div>
-                <div id="block">
-                    <div class="level level-2"> </div>
-                    <p>★★☆☆</p>
-                    <h3>Python</h3></div>
-                <div id="block">
-                    <div class="level level-2"> </div>
-                    <p>★★☆☆</p>
-                    <h3>JavaScript</h3></div>
-                <div id="block">
-                    <div class="level level-1"> </div>
-                    <p>★☆☆☆</p>
-                    <h3>Node.js</h3></div>
-                <div id="block">
-                    <div class="level level-1"> </div>
-                    <p>★☆☆☆</p>
-                    <h3>iOS</h3></div>
-                <div id="block">
-                    <div class="level level-1"> </div>
-                    <p>★☆☆☆</p>
-                    <h3>PHP</h3></div>
-            </div>
-        </div>
+      <div class="container">
+        <h1>我的故事</h1>
+        <hr>
+        <br>
+        <p>在國二時因為一台舊筆電而邁向了資訊之路，當時為了修好那台筆電下了不少功夫。在這過程中也讓我稍微的推開了電腦資訊世界的大門
+          <br>進了高中後，想要對寫程式有進一步的瞭解而參加了校內的資研社，後來更擔任資研社社長與教學長等職務。
+          <br>在加入電資這個大家族的這些日子裡，找到許多相同與資訊為伍與BUG為敵的好戰友，也遇到許多臭味相投的宅宅跟腐女，甚至找到了閃光。電資能力除了帶給我我之前不會的能力，讓我學到更多技術外，還讓我找到了我的家，我心中興趣的歸屬。
+          <br>我的專長是前端網頁設計(HTML、CSS、JavaScript)、硬體組裝修、Unix系統結構。略懂C/C++、Python。其中最熟悉的莫過於硬體裝修。繼那台小筆電及無數自組裝桌機與摸索後，我在2014年年底開始了"白羊個人電腦工作室"的工作，那時整個工作室只有我一個人XD。不過我做這個工作除了要幫自己賺點零用，最大的動機，是不要讓大家再去購買華而不實的套裝桌上型主機。也許是因為年資不夠，工作室生意並沒有非常興盛，在2015年年中後因為必須兼顧高中學業，開始只接受客製化訂單。
+          <br>而程式語言的部分則是網頁比較熟悉，起初是因為同是資研的同學來問我，但那時並不熟悉網頁設計，自己上網爬了文才發現這真合我的胃口。後來透過自學與請教一些有經驗的人，前端網頁設計慢慢變成了跟打字一樣的事。後來在社團也成功的帶完了網頁基礎架構教學的部分，而在社團四校聯合寒訓LuCifer HoliDay時更擔任活動HTML&CSS進階架構教學與JavaScript助教 除了程式以外，已經學過10年的二胡，接觸電腦有一塊是因為想做電子音樂。覺得程式對我而言，是一種幫助人們活得更快樂幫助工程師更痛苦的神奇魔法 目前最習慣使用的作業系統是OS X，但其實比較喜歡Linux的自由度。在參加過眾多開源社群後，希望未來進行開發時，能把一些原本複雜難懂的技術加以改良並且做開源，讓更多人能接觸到資訊化社會的魅力。</p>
+      </div>
     </div>
     <div class="spotlight">
-        <div class="container">
-            <h1>我的故事</h1>
-            <hr>
-            <br>
-            <p>在國二時因為一台舊筆電而邁向了資訊之路，當時為了修好那台筆電下了不少功夫。在這過程中也讓我稍微的推開了電腦資訊世界的大門
-                <br>進了高中後，想要對寫程式有進一步的瞭解而參加了校內的資研社，後來更擔任資研社社長與教學長等職務。
-                <br>在加入電資這個大家族的這些日子裡，找到許多相同與資訊為伍與BUG為敵的好戰友，也遇到許多臭味相投的宅宅跟腐女，甚至找到了閃光。電資能力除了帶給我我之前不會的能力，讓我學到更多技術外，還讓我找到了我的家，我心中興趣的歸屬。
-                <br>我的專長是前端網頁設計(HTML、CSS、JavaScript)、硬體組裝修、Unix系統結構。略懂C/C++、Python。其中最熟悉的莫過於硬體裝修。繼那台小筆電及無數自組裝桌機與摸索後，我在2014年年底開始了"白羊個人電腦工作室"的工作，那時整個工作室只有我一個人XD。不過我做這個工作除了要幫自己賺點零用，最大的動機，是不要讓大家再去購買華而不實的套裝桌上型主機。也許是因為年資不夠，工作室生意並沒有非常興盛，在2015年年中後因為必須兼顧高中學業，開始只接受客製化訂單。
-                <br>而程式語言的部分則是網頁比較熟悉，起初是因為同是資研的同學來問我，但那時並不熟悉網頁設計，自己上網爬了文才發現這真合我的胃口。後來透過自學與請教一些有經驗的人，前端網頁設計慢慢變成了跟打字一樣的事。後來在社團也成功的帶完了網頁基礎架構教學的部分，而在社團四校聯合寒訓LuCifer HoliDay時更擔任活動HTML&CSS進階架構教學與JavaScript助教 除了程式以外，已經學過10年的二胡，接觸電腦有一塊是因為想做電子音樂。覺得程式對我而言，是一種幫助人們活得更快樂幫助工程師更痛苦的神奇魔法 目前最習慣使用的作業系統是OS X，但其實比較喜歡Linux的自由度。在參加過眾多開源社群後，希望未來進行開發時，能把一些原本複雜難懂的技術加以改良並且做開源，讓更多人能接觸到資訊化社會的魅力。</p>
-        </div>
-    </div>
-    <div class="spotlight">
-        <div class="container">
-            <h1>經歷</h1>
-            <hr>
-            <br>
-            <h3>網站方面</h3>
-            <p> Anneの手工烘焙屋 聯絡頁面網站 - 2015/07 - <a href="https://annekitchen.ml">查看網站</a>
-                <br> Anneの手工烘焙屋 官方網站 - 2015/09 - <a href="https://annekitchen.ml/content">查看網站</a>
-                <br> ZLCSC 中崙資研社13屆版本 官方網站 - 2016/01 - <a href="https://www.zlcsc.club.tw">查看網站</a>
-                <br> Aries's Cloud - 2016/09 - <a href="https://cloud.aries0d0f.tk">查看網站</a>
-                <br> 李梅樹紀念館網站開發 - 2016/07 ~ Now - <a href="https://limeishu.org.tw">查看網站</a> </p>
-            <br>
-            <h3>程式競賽方面</h3>
-            <p>中崙高中資訊學科能力競賽 第一名 - 2015/06</p>
-            <p>參加台北市高中資訊學科能力競賽 - 2015/10</p>
-            <br>
-            <h3>證照與考試</h3>
-            <p>中華民國技術執照-電腦硬體裝修(丙級) - 2015/07</p>
-            <br>
-            <h3>相關社群與活動</h3>
-            <p>擔任中崙高中資訊研習社13屆社長兼教學 - 2015/07 ~ 2016/07</p>
-            <p>擔任LuCifer HoliDay 四校聯合寒訓 HTML&amp;CSS進階架構教學與JavaScript助教</p>
-            <p>參加黑客松台灣第十一次 九月主場 - 2015/09</p>
-            <p>參加SITCON 2016 學生計算機年會活動 - 2016/02</p>
-            <p>摩茲工寮 - 偶爾去坐坐XD</p>
-            <br>
-            <h3>工作經驗</h3>
-            <p>李梅樹紀念館資訊組志工 - 2016/06 ~ Now</p>
-            </p>
-        </div>
+      <div class="container">
+        <h1>經歷</h1>
+        <hr>
+        <br>
+        <h3>網站方面</h3>
+        <p> Anneの手工烘焙屋 聯絡頁面網站 - 2015/07 - <a href="https://annekitchen.ml">查看網站</a>
+          <br> Anneの手工烘焙屋 官方網站 - 2015/09 - <a href="https://annekitchen.ml/content">查看網站</a>
+          <br> ZLCSC 中崙資研社13屆版本 官方網站 - 2016/01 - <a href="https://www.zlcsc.club.tw">查看網站</a>
+          <br> Aries's Cloud - 2016/09 - <a href="https://cloud.aries0d0f.tk">查看網站</a>
+          <br> 李梅樹紀念館網站開發 - 2016/07 ~ Now - <a href="https://limeishu.org.tw">查看網站</a> </p>
+        <br>
+        <h3>程式競賽方面</h3>
+        <p>中崙高中資訊學科能力競賽 第一名 - 2015/06</p>
+        <p>參加台北市高中資訊學科能力競賽 - 2015/10</p>
+        <br>
+        <h3>證照與考試</h3>
+        <p>中華民國技術執照-電腦硬體裝修(丙級) - 2015/07</p>
+        <br>
+        <h3>相關社群與活動</h3>
+        <p>擔任中崙高中資訊研習社13屆社長兼教學 - 2015/07 ~ 2016/07</p>
+        <p>擔任LuCifer HoliDay 四校聯合寒訓 HTML&amp;CSS進階架構教學與JavaScript助教</p>
+        <p>參加黑客松台灣第十一次 九月主場 - 2015/09</p>
+        <p>參加SITCON 2016 學生計算機年會活動 - 2016/02</p>
+        <p>摩茲工寮 - 偶爾去坐坐XD</p>
+        <br>
+        <h3>工作經驗</h3>
+        <p>李梅樹紀念館資訊組志工 - 2016/06 ~ Now</p>
+        </p>
+      </div>
     </div>
     <div class="intro end">
-        <div class="container">
-            <footer id="footer">
-                <ul class="icons">
-                    <li><a href="tel:+886966657716" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
-                    <li><a href="https://www.facebook.com/aries0d0f" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-                    <li> <a href="mailto:aries0d0f@gmail.com" class="icon alt fa-envelope"><span class=" label ">Email</span></a></li>
-                    <li><a href="https://github.com/aries0d0f" class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>2016 <a href="https://github.com/aries0d0f">@Aries0d0f</a>. All Right Reserved. | <a href="https://github.com/aries0d0f/aries-personal-website">Git Fork</a></li>
-                </ul>
-            </footer>
-        </div>
+      <div class="container">
+        <footer id="footer">
+          <ul class="icons">
+            <li><a href="tel:+886966657716" class="icon alt fa-phone"><span class="label">Phone</span></a></li>
+            <li><a href="https://www.facebook.com/aries0d0f" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+            <li> <a href="mailto:aries0d0f@gmail.com" class="icon alt fa-envelope"><span class=" label ">Email</span></a></li>
+            <li><a href="https://github.com/aries0d0f" class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
+          </ul>
+          <ul class="copyright">
+            <li>2016 <a href="https://github.com/aries0d0f">@Aries0d0f</a>. All Right Reserved. | <a href="https://github.com/aries0d0f/aries-personal-website">Git Fork</a></li>
+          </ul>
+        </footer>
+      </div>
     </div>
+  </div>
 </body>
 <link rel="stylesheet" href="./assets/css/main.css">
+<link rel="stylesheet" href="assets/css/animate.css">
 
 </html>
