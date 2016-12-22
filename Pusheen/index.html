@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Test</title>
+</head>
+<style>
+  * {
+    border: 0;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  @keyframes turn {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #canvas {
+    margin: auto auto;
+    display: block;
+    position: relative;
+    height: 40em;
+    width: 40em;
+  }
+  
+  .sketch {
+    height: 40em;
+    position: relative;
+    margin: auto;
+  }
+  
+  .magic {
+    margin: auto;
+    background: -webkit-linear-gradient(45deg, rgb(239, 71, 111), rgb(49, 122, 188), rgb(255, 255, 255));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    border-radius: 100%;
+    animation: linear turn 5s infinite;
+  }
+  
+  .pusheen {
+    top: 13em;
+    left: 13em;
+    display: block;
+    position: absolute;
+    margin: auto;
+    height: 10em;
+    width: 10em;
+  }
+
+</style>
+
+<body>
+  <div class="sketch">
+    <div id="canvas"><img class="magic" src="./magic.png" alt=""><div class="pusheen"><img src="./pusheeneat.gif" alt=""></div></div>
+  </div>
+</body>
+
+</html>
