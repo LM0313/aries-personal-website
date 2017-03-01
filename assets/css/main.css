@@ -127,6 +127,15 @@ body {
   position: relative;
 }
 
+.story p {
+  margin: .5em 0;
+  
+  text-align: left;
+  text-indent: 2em;
+  word-wrap: break-word;
+  
+}
+
 ul.icon {
   width: 2.5em;
   height: 2.5em;
@@ -153,7 +162,7 @@ ul.icon {
   text-align: center;
 }
 
-.icon > .label {
+.icon>.label {
   display: none;
 }
 
@@ -323,7 +332,7 @@ ul.icon {
 /* Pad */
 
 @media screen and (max-width: 1080px) {
-/*
+  /*
   body {
     background-image: url(image/bg.jpg);
     background-attachment: fixed;
@@ -339,8 +348,6 @@ ul.icon {
     font-size: 1.2em;
   }
   p {
-    word-spacing: 2em;
-    white-space: 2em;
     font-size: .8em;
   }
   .intro {
