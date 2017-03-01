@@ -339,6 +339,7 @@ ul.icon {
     font-size: 1.2em;
   }
   p {
+    white-space: 2em;
     font-size: .8em;
   }
   .intro {
