@@ -1,9 +1,3 @@
-function ShowTime(d,n){
-　var d = new Date();
-　var n = d.getSeconds();
-　setTimeout('ShowTime()',1000);
-  return n;
-}
 var mouseX = 0
   , mouseY = 0
   , windowHalfX = window.innerWidth / 2
@@ -65,13 +59,10 @@ function init() {
    */
   var line = new THREE.Line(geometry, new THREE.LineBasicMaterial({
     color: color
-    , opacity: 0.2
+    , opacity: 0.3
   }));
   scene.add(line);
   document.addEventListener('mousemove', onDocumentMouseMove, true);
-//  document.addEventListener('touchstart', onDocumentTouchStart, true);
-//  document.addEventListener('touchmove', onDocumentTouchMove, false);
-  //
   window.addEventListener('resize', onWindowResize, false);
 }
 
@@ -82,36 +73,18 @@ function onWindowResize() {
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
 }
-//
 function onDocumentMouseMove(event) {
   mouseX = (event.clientX - windowHalfX);
   mouseY = (event.clientY - windowHalfY);
 }
-
-function onDocumentTouchStart(event) {
-  if (event.touches.length > 1) {
-    event.preventDefault();
-    mouseX = (event.touches[0].pageX - windowHalfX) * 0.7;
-    mouseY = (event.touches[0].pageY - windowHalfY) * 0.7;
-  }
-}
-
-function onDocumentTouchMove(event) {
-  if (event.touches.length == 1) {
-    event.preventDefault();
-    mouseX = event.touches[0].pageX - windowHalfX;
-    mouseY = event.touches[0].pageY - windowHalfY;
-  }
-}
-//
 function animate() {
   requestAnimationFrame(animate);
   render();
 }
 
 function render() {
-  camera.position.x += (mouseX - camera.position.x) * 0.1 + (ShowTime() - 10) * 0.5;
-  camera.position.y += (-mouseY + 200 - camera.position.y) * 0.05 + (ShowTime() - 10) * 0.5;
+  camera.position.x += (mouseX - camera.position.x) * 0.1;
+  camera.position.y += (-mouseY + 200 - camera.position.y) * 0.05;
   camera.lookAt(scene.position);
   renderer.render(scene, camera);
 }

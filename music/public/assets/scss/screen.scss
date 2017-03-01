@@ -1,0 +1,38 @@
+#screen {
+	top: 15%;
+	right: 15%;
+	left: 15%;
+	bottom: 15%;
+	display: block;
+	color: $white;
+	height: 70%;
+	width: 70%;
+	position: fixed;
+	background: hsla(0, 50%, 0, 0.9);
+	box-shadow: 1px 1px 10px rgba($gray, 0.2);
+	border-radius: 1em;
+	.container {
+		overflow: hidden;
+		display: block;
+		position: relative;
+		height: 100%;
+		width: 100%;
+		border-radius: 1em;
+	}
+	&:before {
+		text-align: center;
+		line-height: 5em;
+		content: '✕';
+		color: $black;
+		z-index: 100;
+		width: 5em;
+		height: 5em;
+		top: -2.5em;
+		left: -2.5em;
+		border-radius: 50%;
+		display: block;
+		background-color: $white;
+		position: absolute;
+		box-shadow: 1px 1px 5px $black;
+	}
+}

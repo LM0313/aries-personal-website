@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Example of the Authorization Code flow with Spotify</title>
+	<link rel="stylesheet" href="/assets/css/main.css"> </head>
+
+<body>
+	<div id="home">
+		<div id="user-profile" class="profile"></div>
+	</div>
+	<script id="user-profile-template" type="text/x-handlebars-template">
+		<div class="container">
+			<ul class="intro">
+				<li><img src="{{images.0.url}}" />
+					<div class="image"></div>
+				</li>
+				<li>
+					<h1>{{display_name}}</h1></li>
+			</ul>
+		</div>
+	</script>
+	<script type="text/javascript">
+		(function() {
+			//member image rewrite
+			var itemsP = jQuery('#home>.profile>.container>ul.intro>li');
+			var patchsP = jQuery('#home>.profile>.container>ul.intro>li>.image');
+			for (var i = 0; i < itemsP.length; ++i) {
+				$(patchsP[i]).css('background-image', 'url(' + $(itemsP[i]).find('img').attr('src') + ')');
+			};
+		});
+	</script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0-alpha.1/handlebars.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="/assets/js/home.js"></script>
+</body>
+
+</html>

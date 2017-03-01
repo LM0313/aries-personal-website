@@ -122,9 +122,9 @@
     $(function() {
       $('#typing').typed({
         strings: [
-          "Hi, I'm Aries.<br /> ^1000" +
+          "Hi, I'm Aries.<br /> ^100" +
           "Believed that <br /> ^100" +
-          " good things are worth waiting for.<br /> ^500" +
+          "good things are worth waiting for.<br /> ^100" +
           "As a Web Developer,<br /> ^100" +
           "I'm more than sure to devote myself to this career."
         ],
