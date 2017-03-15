@@ -1,4 +1,4 @@
-# aries-personal-website v2.0
+# aries-personal-website v3.0
 
 Inspried by @Aries0d0f
 
@@ -16,11 +16,17 @@ CC-BY 4.0
   * Add starnight interactive background (Basic on JavaScript / JQuery / Three.js / Projector.js)
   * Bug Fix
 
+* Version 3.0
+
+  * New UI
+  * Remove Type.js/Three.js/Project.js
+  * Bug Fix
+  * Loading Speed Fix
+
 # Todo List
 
   - [ ] Animation efficient addition.
   - [ ] Introduction contents rewrite.
   - [ ] Add introduction's English translated version.
   - [ ] Fix some grammar error.
-  - [x] 學測快爆惹
-  - [x] Fix text-typing speed on welcome screen.
+  - [x] 學測爆惹
