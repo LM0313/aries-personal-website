@@ -22,6 +22,7 @@ CC-BY 4.0
   * Remove Type.js/Three.js/Project.js
   * Bug Fix
   * Loading Speed Fix
+  * Stylesheet with compass basis on SCSS
 
 # Todo List
 
