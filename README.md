@@ -30,3 +30,7 @@ CC-BY 4.0
   - [ ] Add introduction's English translated version.
   - [ ] Fix some grammar error.
   - [x] 學測爆惹
+  
+# Issue
+  
+  - [ ] Expreience Sort by Recent Date
