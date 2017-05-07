@@ -25,4 +25,4 @@ $(".more").click(function () {
     $("#slide").toggleClass("more");
 });
 
-$(document).ready( function () {$('#welcome>.container>.content')[0].innerHTML = '<header><h1 class="title">抱歉，本站正在維護中</h1></header>';})
+$(document).ready( function () {$('#welcome>.container>.content')[0].innerHTML = '<h1 class="title">抱歉，本站正在維護中</h1>';})
