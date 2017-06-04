@@ -1,37 +1,21 @@
-# aries-personal-website v4.0
+# y
 
-Inspried by @Aries0d0f
+> y
 
-CC-BY 4.0
+## Build Setup
 
-# History
+``` bash
+# install dependencies
+npm install
 
-* Version 1.0
+# serve with hot reload at localhost:8080
+npm run dev
 
-  * Main pages / style finished.
+# build for production with minification
+npm run build
 
-* Version 2.0
+# build for production and view the bundle analyzer report
+npm run build --report
+```
 
-  * Add Welcome Screen
-  * Add starnight interactive background (Basic on JavaScript / JQuery / Three.js / Projector.js)
-  * Bug Fix
-
-* Version 3.0
-
-  * New UI
-  * Remove Type.js/Three.js/Project.js
-  * Bug Fix
-  * Loading Speed Fix
-  * Stylesheet with compass basis on SCSS
-
-* Version 4.0
-
-  * Change developing framework to Vue.js + webpack CI
-
-# Todo List
-
-
-  
-# Issue
-  
-
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
