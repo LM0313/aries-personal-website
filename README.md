@@ -1,4 +1,4 @@
-# aries-personal-website v3.0
+# aries-personal-website v4.0
 
 Inspried by @Aries0d0f
 
@@ -24,14 +24,14 @@ CC-BY 4.0
   * Loading Speed Fix
   * Stylesheet with compass basis on SCSS
 
+* Version 4.0
+
+  * Change developing framework to Vue.js + webpack CI
+
 # Todo List
 
-  - [ ] Animation efficient addition.
-  - [ ] Introduction contents rewrite.
-  - [ ] Add introduction's English translated version.
-  - [ ] Fix some grammar error.
-  - [x] 學測爆惹
+
   
 # Issue
   
-  - [ ] Expreience Sort by Recent Date
+
