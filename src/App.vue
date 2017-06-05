@@ -5,7 +5,11 @@
 </template>
 
 <script>
+const styleLoader = require('@/components/Styleloader.vue')
 export default {
+  components: {
+    styleLoader
+  }
 }
 </script>
 
