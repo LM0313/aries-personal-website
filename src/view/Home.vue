@@ -1,63 +1,66 @@
 <template>
-  <div class="home">
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title">自評能力指標</h1>
-        <chart :type="'horizontalBar'" :data="skillData" :options="options"></chart>
+  <div class="root">
+    <Sideview></Sideview>
+    <div class="home">
+      <div id="skill" class="spotlight">
+        <div class="container">
+          <h1 class="title">自評能力指標</h1>
+          <chart :type="'horizontalBar'" :data="skillData" :options="options"></chart>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
-    </div>
-    <div class="spotlight">
-      <div class="container">
-        <h1 class="title"></h1>
-        <p class="content"></p>
+      <div class="spotlight">
+        <div class="container">
+          <h1 class="title"></h1>
+          <p class="content"></p>
+        </div>
       </div>
     </div>
   </div>
@@ -65,9 +68,11 @@
 
 <script>
 import Chart from 'vue-bulma-chartjs'
+import Sideview from '@/components/Sideview'
 export default {
   components: {
-    Chart
+    Chart,
+    Sideview
   },
   data() {
     return {
@@ -117,23 +122,39 @@ export default {
 
 <style lang="scss">
 @import "../assets/scss/main";
+
+.root {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100%;
+  position: relative;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
+}
+
 .home {
   display: flex;
   min-height: 100%;
-  width: 100%;
+  width: 60%;
+  padding: 0 2em;
   position: relative;
   justify-content: center;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
+  @media screen and (max-width: 1024px) {
+    width: 100%;
+  }
   .spotlight {
     z-index: 1;
     display: flex;
     justify-content: center;
-    width: 60vw;
+    width: 100%;
     height: 35em;
-    margin: 2em;
+    margin: 2em 0;
+    pointer-events: none;
     .container {
-      background: rgba($bright, 1);
+      background: rgba($bright, .3);
       box-shadow: 1px 1px 2px rgba($gray, .7);
       flex-direction: column;
       display: flex;

@@ -1,14 +1,20 @@
 <template>
   <div id="app">
     <div id="particles-js"></div>
-    <router-view></router-view>
+    <Hello></Hello>
   </div>
 </template>
 
 <script>
-import particles from 'particles.js'
+import particles          from 'particles.js'
+import Hello              from '@/view/Hello'
+
 
 export default {
+
+  components: {
+    Hello
+  },
 
   mounted() {
     particlesJS('app', {
